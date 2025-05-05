@@ -31,5 +31,14 @@ public class ProcessedTicketsStack {
         return (this.processedTickets.isEmpty()) ? null : this.processedTickets.peek();
     }
 
+    /**
+     * Returns and removes the ticket at the top
+     * @return null if stack isEmpty or last added ticket if stack is not empty
+     */
+
+    public Ticket removeLastProcessesTicket(){
+        return (this.processedTickets.isEmpty()) ? null : this.processedTickets.pop();
+    }
+
 
 }
