@@ -30,7 +30,7 @@ public class ProcessedTicketsStack {
      * Returns a copy of the ticket at the top - NO REMOVING
      * @return null if stack isEmpty or last added ticket if stack is not empty
      */
-    public Ticket peekLastProcessesTicket(){
+    public Ticket peekLastProcessedTicket(){
         return (this.processedTickets.isEmpty()) ? null : this.processedTickets.peek();
     }
 
@@ -39,7 +39,7 @@ public class ProcessedTicketsStack {
      * @return null if stack isEmpty or last added ticket if stack is not empty
      */
 
-    public Ticket removeLastProcessesTicket(){
+    public Ticket removeLastProcessedTicket(){
         return (this.processedTickets.isEmpty()) ? null : this.processedTickets.pop();
     }
 
