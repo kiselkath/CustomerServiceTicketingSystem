@@ -1,1 +1,3 @@
-#Customer Service ticketing System
+# Customer Service ticketing System
+
+Разбираемся как работает Queue и Stack
