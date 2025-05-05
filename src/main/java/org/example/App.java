@@ -52,7 +52,7 @@ public class App {
     }
 
     private static void undoLastProcessedTicket() {
-        Ticket ticket =  processedStack.removeLastProcessedTicket();
+        Ticket ticket =  processedStack.removeLastProcessesTicket();
         if (ticket == null) {
             System.out.println("⚠️ No ticket to undo.");
             return;
@@ -62,7 +62,7 @@ public class App {
     }
 
     private static void viewLastProcessedTicket() {
-        Ticket ticket =  processedStack.peekLastProcessedTicket();
+        Ticket ticket =  processedStack.peekLastProcessesTicket();
         if (ticket == null) {
             System.out.println("⚠️ No processed tickets yet.");
             return;

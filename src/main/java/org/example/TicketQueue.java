@@ -14,7 +14,7 @@ public class TicketQueue{
      * Это поле хранит очередь заявок (Ticket).
      * Используется интерфейс Queue, а реализуется через LinkedList.
      */
-    private final Queue<Ticket> ticketQueue;
+    private final Queue<Ticket> ticketQueue;  // final: makes final reference, re-assignment is not allowed!
 
 
     /**
@@ -40,5 +40,14 @@ public class TicketQueue{
      */
     public Ticket processNextTicket(){
         return this.ticketQueue.poll();
+    }
+
+    /**
+     * Returns the number of tickets in the queue.
+     *
+     * @return the size of the queue
+     */
+    public int getQueueSize(){
+        return this.ticketQueue.size();
     }
 }
